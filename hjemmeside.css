@@ -1,18 +1,11 @@
-body {
-  background-color: rgb(143, 142, 144);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .lw {
-    font-size: 60px;
+    font-size: 16px;
 }
 h1 {
     color: red; 
 }
-
-a href {
-  color: green;
-  }
 
 a {
   color: whitesmoke; 
@@ -36,10 +29,24 @@ a {
   cursor: pointer;
   color: whitesmoke;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
   
 }
 
+.dropbtnhjem {
+  border: 50px;
+  border-radius: 10px;
+  background-color: rgb(54, 99, 132) ;
+  padding: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: ;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
 .dropdown a:hover {
     color: rgb(143, 142, 144);}
 
@@ -85,8 +92,85 @@ a {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgb(54, 99, 132);}
 
-.meny {
-  background-color: rgb(143, 142, 144);
+.toppmeny {
+  background-color: rgb(86, 10, 162);
   overflow: hiden;
+  padding-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bunnmeny { 
+  padding-top: 15px;
+  height: 150px;
+  width: 90%;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background-color: rgb(191, 203, 200);
+  display: flex;
+  font-size: 20px;
+}
+
+/* BUNNMENY */
+
+.some, p {
+color: red;
+
+}
+.brands {
+color: red;
+}
+
+footer{
+    background: #111111;
+    min-height: 10vh;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer > div {
+  flex:1;
+}
+.opphavsrett, p{
+    color: whitesmoke;
+}
+
+.kontakt {
+    color: whitesmoke;
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#footer 
+/p.left {
+    text-align:center;
+    padding: 0px;;
+    float: left; 
+    
+    }
+
+#footer 
+/p.right {
+    float:left;
+    padding: 0px;
+    padding-left: 50%;;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hovedside { 
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(55, 135, 77);
 
 }
