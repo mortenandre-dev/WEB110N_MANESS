@@ -1,255 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <style>body {
-  /background-color: rgb(143, 142, 144);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-}
-
-.lw {
-    font-size: 16px;
-}
-h1 {
-    color: red; 
-}
-
-a {
-  color: whitesmoke; 
-  text-decoration: none;
-  }
-
-.meny a:hover {
-    color: rgb(143, 142, 144);
-}
-
-.dropbtn {
-  border: 50px;
-  border-radius: 10px;
-  background-color: rgb(54, 99, 132) ;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-
-.dropbtnhjem {
-  border: 50px;
-  border-radius: 10px;
-  background-color: rgb(54, 99, 132) ;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-.dropdown a:hover {
-    color: rgb(143, 142, 144);}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(54, 99, 132);
-  min-width: 160px; 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  font-size: 16;
-  font-weight: normal;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: whitesmoke;
-  padding: 15px 32px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-size: 16px; 
-  font: normal;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-    }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgb(54, 99, 132);}
-
-.toppmeny {
-  background-color: rgb(86, 10, 162);
-  overflow: hiden;
-  padding-top: 20px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bunnmeny { 
-  padding-top: 15px;
-  height: 150px;
-  width: 90%;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  text-align: center;
-  background-color: rgb(191, 203, 200);
-  display: flex;
-  font-size: 20px;
-}
-
-/* BUNNMENY */
-
-.some, p {
-color: red;
-
-}
-.brands {
-color: red;
-}
-
-footer{
-    background: #111111;
-    min-height: 10vh;
-    float: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-footer > div {
-  flex:1;
-}
-.opphavsrett, p{
-    color: whitesmoke;
-}
-
-.kontakt {
-    color: whitesmoke;
-
-}
-
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-#footer 
-/p.left {
-    text-align:center;
-    padding: 0px;;
-    float: left; 
-    
-    }
-
-#footer 
-/p.right {
-    float:left;
-    padding: 0px;
-    padding-left: 50%;;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.hovedside { 
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: rgb(55, 135, 77);
-
-}
-</style>
-        </head>
-        <body>
-            
-
-
 <link rel="stylesheet" href="hjemmeside.css">
+</head>
+<body>
 <title>BØ INDUSTRIBEDRIFT</title>
 <meta charset="UTF-8">
 
    
-    <!-- Start your code here -->
+    <!-- START TOPPMENY - DENNE MÅ VÆRE LIK FOR ALLE SIDER-->
+	
     <div class="toppmeny">
     <table style="width=100 %" align="center">
         <tbody><tr>
         <th>
             </th><th><button type="button" class="dropbtnhjem">
-				<a href="INDEX.html"></a><div id="some-div"><a href="INDEX.html"> 
-				<img src="bilder/bologo2.png" alt="LOGO" width="70" height="30"> 
+				<a href="index.html"></a><div id="some-div"><a href="index.html"> 
+				<img src="bilder/bologo4.png" alt="LOGO" width="100" height="47"> 
 				</a></div></button></th>
         <th>
-        </th><th>
+        </th>
+		<th>
             <div class="dropdown">
                 <button class="dropbtn"> VARER </button>
                 <div class="dropdown-content">
-                    <a href="KAFFE.html"> KAFFE </a>
-                    <a href="KONTORREKVISITA.html"> KONTORREKVISITA </a>
+                    <a href="kaffe.html"> KAFFE </a>
+                    <a href="kontorrekvisita.html"> KONTORREKVISITA </a>
                 </div>
             </div>
         </th>
-            <th>
+        <th>
                 <div class="dropdown">
                     <button class="dropbtn"> TJENESTER </button>
                     <div class="dropdown-content">
-                        <a href="MONTERING.html"> MONTERINGSTJENESTER </a>
-                        <a href="LEVERING.html"> LEVERING </a>
+                        <a href="montering.html"> MONTERINGSTJENESTER </a>
+                        <a href="levering.html"> LEVERING </a>
                     </div>
                 </div>
-            </th>
-            <th><button type="button" class="dropbtn"><a href="OMOSS.html"> OM OSS </a></button></th>
-        <th><button type="button" class="dropbtn"><a href="KONTAKT.html">KONTAKT </a></button></th>
+        </th>
+		<th>
+                <div class="dropdown">
+                    <button class="dropbtn"> UTLEIE </button>
+                    <div class="dropdown-content">
+                        <a href="utleie_hage.html"> MONTERINGSTJENESTER </a>
+                        <a href="utleie_kontor.html"> LEVERING </a>
+                    </div>
+                </div>
+        </th>
+        <th><button type="button" class="dropbtn"><a href="omoss.html"> OM OSS </a></button></th>
+        <th><button type="button" class="dropbtn"><a href="kontakt.html">KONTAKT </a></button></th>
     </tr>
 </tbody></table>
     </div>
+    <!-- SLUTT TOPPMENY -->
+	
+
+	<!-- START HOVEDVINDU -->
 <table class="hovedside"> 
     <tbody><tr>
         <th>
-            <h1> KUNNGJØRING 1</h1>
-                <p class="lw">Her kommer kunngjøringer og nyheter fra bedriften. Gjerne med bildeeksempler også. For eksempel legger jeg her ved logoen. </p><p><img src="bilder/bologo.png" height="300" width="300" align="center"></p>
+            <h1> KONTORREKVISITA </h1>
+                <p class="lw">Her kommer informasjon om hvilke type kontorrekvisita vi tilbyr. Gjerne med bildeeksempler også. For eksempel legger jeg her ved logoen. </p><p><img src="bilder/bologo.png" height="300" width="300" align="center"></p>
                 <p></p>
 
-            <h1> KUNNGJØRING 2</h1>
-                <p class="lw">Her kommer kunngjøringer og nyheter fra bedriften. Gjerne med bildeeksempler også. For eksempel legger jeg her ved logoen til Facebook. </p><p><img src="bilder/facebook.png" height="300" width="300" align="center"></p>
+            <h1> KONTORSTOLER </h1>
+                <p class="lw">Her kommer informasjon om hvilke kontorstoler vi tilbyr. Gjerne med bildeeksempler også. For eksempel legger jeg her ved logoen til Facebook. </p><p><img src="bilder/facebook.png" height="300" width="300" align="center"></p>
                 <p></p>
-            <h1> KUNNGJØRING 3</h1>
-                <p class="lw">Jeg kommer selvsagt til å endre fargene. </p><p><img src="bilder/facebook.png" height="300" width="300" align="center"></p>
-                <p></p>
-            <h1> KUNNGJØRING 4</h1>
-                <p class="lw">Her kommer kunngjøringer og nyheter fra bedriften. Gjerne med bildeeksempler også. For eksempel legger jeg her ved logoen til Facebook. </p><p><img src="bilder/facebook.png" height="300" width="300" align="center"></p>
-                <p></p>                
+             
 <h1> T </h1>
-<!-- End your code here -->
 
-
-<script>// Write JavaScript here</script>
  
         </th>
     </tr>
 
+		
 </tbody></table>
+	
+	<!-- SLUTT HOVEDVINDU -->
+
+	
+	<!-- START BUNNMENY -->
 
 <footer class="bunnmeny">
         <div class="opphavsrett">
@@ -276,8 +106,6 @@ a{
         </p></span></div>
     </footer>
 
-
-            <script>// Write JavaScript here</script>
         
     
 </body>
