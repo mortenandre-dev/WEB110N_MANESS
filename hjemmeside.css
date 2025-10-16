@@ -86,7 +86,7 @@ a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color:rgb(122, 118, 118);
+    background-color: rgb(122, 118, 118);
     font-size: 20px;
     border-radius: 10px;
 }
@@ -162,6 +162,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 
 
 
