@@ -1,14 +1,12 @@
-}
-
 .lw {
     font-size: 16px;
 }
 h1 {
-    color: red; 
+    color: black; 
 }
 
 a {
-  color: whitesmoke; 
+  color: black; 
   text-decoration: none;
   }
 
@@ -19,7 +17,7 @@ a {
 .dropbtn {
   border: 50px;
   border-radius: 10px;
-  background-color: rgb(54, 99, 132) ;
+  background-color: rgb(118, 121, 123);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -35,7 +33,7 @@ a {
 .dropbtnhjem {
   border: 50px;
   border-radius: 10px;
-  background-color: rgb(54, 99, 132) ;
+  background-color: rgb(118, 121, 123) ;
   padding: 0px 5px;
   text-align: center;
   text-decoration: none;
@@ -68,11 +66,12 @@ a {
   font-size: 16;
   font-weight: normal;
   z-index: 1;
+  border-radius: 10px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: whitesmoke;
+  color: black;
   padding: 15px 32px;
   text-decoration: none;
   display: block;
@@ -82,7 +81,11 @@ a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    font-size: 20px;
+    border-radius: 10px;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -90,10 +93,10 @@ a {
     }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgb(54, 99, 132);}
+.dropdown:hover .dropbtn {background-color: rgb(122, 118, 118);}
 
 .toppmeny {
-  background-color: rgb(86, 10, 162);
+  background-color: rgb(54, 99, 132);
   overflow: hiden;
   padding-top: 20px;
   width: 90%;
@@ -108,12 +111,21 @@ a {
   padding-left: 0px;
   padding-bottom: 0px;
   text-align: center;
-  background-color: rgb(191, 203, 200);
+  background-color: rgb(54, 99, 132);
   display: flex;
   font-size: 20px;
 }
 
 /* BUNNMENY */
+
+.hovedside { 
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(122, 118, 118);
+
+}
 
 .some, p {
 color: red;
@@ -124,7 +136,7 @@ color: red;
 }
 
 footer{
-    background: #111111;
+    background: rgb(54, 99, 132);
     min-height: 10vh;
     float: center;
     margin-left: auto;
@@ -166,11 +178,5 @@ a{
 }
 
 
-.hovedside { 
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: rgb(55, 135, 77);
 
-}
+
