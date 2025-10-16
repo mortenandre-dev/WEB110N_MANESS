@@ -59,9 +59,33 @@
 <table class="hovedside"> 
     <tbody><tr>
         <th>
-            <h1> KUNNGJØRING 1</h1>
-                <p class="lw">HER KOMMER KONTAKTSKJEMA OG KONTAKTINFO. HER ER LINK TIL LOGOEN VÅR </p><p><img src="bilder/bologo.png" height="300" width="300" align="center"></p>
-                <p></p>
+            <h1> KONTAKT OSS</h1>
+			<div class="kontakt">
+    		<form action="mailto:truls@boindustri.no" method="post" enctype="text/plain">
+
+   			<label for="fname">Fornavn</label>
+		    <input type="text" id="fname" name="Fornavn" placeholder="Fornavn">
+
+    		<label for="lname">Etternavn</label>
+    		<input type="text" id="lname" name="Etternavn" placeholder="Etternavn">
+
+    		<label for="country">Produkt / tjeneste</label>
+   			<select id="country" name="Produkt">
+      			<option value="Kaffeavtale">Kaffeavtale</option>
+      			<option value="Kontorrekvisita">Kontorrekvisita</option>
+      			<option value="Monteringstjenester">Monteringstjenester</option>
+      			<option value="Levering">Levering</option>
+      			<option value="Utleie hage">Utleie hage</option>
+      			<option value="Utleie kontor">Utleie kontor</option>
+    </select>
+
+    <label for="subject">Melding</label>
+    <textarea id="subject" name="Melding" placeholder="F.eks. 'Ønsker tilbud på montering av projektor i kontorlokalet fredag 21. desember og demontering søndag 23. desember. Projektoren må ha god oppløsning og fungerer greit selv om det ikke er mørkt i rommet'" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+
+  </form>
+</div>
               
 <h1> T </h1>
 
