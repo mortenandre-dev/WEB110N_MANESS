@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="hjemmeside.css">
+<link rel="stylesheet tjenester" href="tjenester.css">
 <title>BØ INDUSTRIBEDRIFT</title>
 <meta charset="UTF-8">
 
@@ -31,13 +32,7 @@
             </div>
         </th>
         <th>
-                <div class="dropdown">
-                    <button class="dropbtn"> TJENESTER </button>
-                    <div class="dropdown-content">
-                        <a href="utleie_hage.html"> UTLEIE HAGE </a>
-                        <a href="utleie_kontor.html"> UTLEIE KONTOR </a>
-                    </div>
-                </div>
+          <button type="button" class="dropbtn"><a href="tjenester.html"> TJENESTER </a></button>
         </th>
 		<th>
                 <div class="dropdown">
@@ -57,67 +52,100 @@
 	
 
 	<!-- START HOVEDVINDU -->
+
+
 <div class="hovedside">
 
-        <h3>Raskt • Lokalt • Pålitelig</h3>
-   
-             <h1>Spør oss om hjelp</h1>
-                
-                <p>Vi hjelper deg med montering og oppsett av praktisk utstyr på arbeidsplassen.
-                <br>Enten du skal ha en prosjektor på møterommet, et enkelt overvåkningssystem eller en automatisk døråpner.
-                <br>Våre montører sørger for at alt fungerer fra første dag.</p>
+<!--Seksjon for Spør oss om hjelp-->
+<section class="spor-oss">
+  <div class="spor-oss-innhold">
+    <div class="tekst">
+      <h1>Spør oss om hjelp</h1>
+      <p>
+        Vi hjelper deg med montering og oppsett<br> av praktisk utstyr på arbeidsplassen.
+        <br>Enten du skal ha en prosjektor på møterommet,<br> et enkelt overvåkningssystem
+        eller en automatisk døråpner.
+        <br>Våre montører sørger for at alt fungerer fra første dag.
+      </p>
+      <a href="#kontakt-skjema" class="knapp">Be om tilbud</a>
+    </div>
 
- <h2>Våre tjenester</h2>
+    <div class="bilde">
+      <img src="bilder/tjenester.jpg" alt="Montør hjelper kunde" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<h1>Våre tjenester</h1>
+
+<!--Tjenestene er satt opp som bokser med bilder-->
 <div class="tjenester-container">
  
 
   <div class="tjeneste-boks">
+     <img src="bilder/installasjon.jpg" alt="Installasjon og oppsett" />
     <h3>Installasjon og oppsett</h3>
     <p>Montasje av utstyr som projektorer, overvåkning og automatiske døråpnere av erfarne montører.</p>
   </div>
   <div class="tjeneste-boks">
+     <img src="bilder/nettverk.jpg" alt="Nettverkstjenester" />
     <h3>Nettverksutstyr</h3>
     <p>Tilpasning og kabling av nettverksutstyr eller sensorer.</p>
   </div>
   <div class="tjeneste-boks">
+     <img src="bilder/feilsøking.jpg" alt="Support" />
     <h3>Feilsøking og oppgradering</h3>
     <p>Vi utfører feilsøking og oppgradering av eksisterende installasjoner.</p>
   </div>
 </div>
 
-<h2>Slik jobber vi</h2>
-<ul>
-<li>Bestilling / behovsavklaring – vi kartlegger hva du trenger</li>
-<li>Tilbud og tidspunkt – du får en fastpris og avtale</li>
-<li>Installasjon – våre montører utfører jobben effektivt</li>
-<li>Testing og overlevering – vi sikrer at alt fungerer</li>
-<li>Support – vi er tilgjengelige hvis du trenger justeringer senere</li>
+<!-- START NEDERSTE SEKSJON -->
+<div class="nederste-seksjon">
 
-</ul>
+  <!-- VENSTRE KOLONNE - Slik jobber vi -->
+  <div class="arbeidsprosess">
+    <h2>Slik jobber vi</h2><br>
+    <ul>
+      <li>Bestilling / behovsavklaring – vi kartlegger hva du trenger</li><br>
+      <li>Tilbud og tidspunkt – du får en fastpris og avtale</li><br>
+      <li>Installasjon – våre montører utfører jobben effektivt</li><br>
+      <li>Testing og overlevering – vi sikrer at alt fungerer</li><br>
+      <li>Support – vi er tilgjengelige hvis du trenger justeringer senere</li><br>
+    </ul><br><br><br>
+  </div>
 
-<h2>Be om tilbud</h2>
-<h3>Fyll ut skjema:</h3>
+  <!-- HØYRE KOLONNE - Be om tilbud -->
+  <div class="kontaktseksjon" id="kontakt-skjema">
+    <h2>Send forespørsel</h2>
 
-<form action="#" method="post">
+    <form action="#" method="post">
       <label for="name">Navn</label><br>
       <input type="text" id="name" name="name" placeholder="Fornavn Etternavn" required><br>
 
       <label for="service">Ønsket tjeneste</label><br>
-      <input type="text" id="service" name="service" placeholder="Fritekst" required><br>
+      <input type="text" id="service" name="service" placeholder="Hva kan vi hjelpe deg med?" required><br>
 
       <label for="email">Din e-post</label><br>
-      <input type="email" id="email" name="email" placeholder="mail@mail.com" required><br>
+      <input type="email" id="email" name="email" placeholder="mail@mail.com" required><br><br>
 
       <label for="phone">Telefonnummer</label><br>
       <input type="tel" id="phone" name="phone" placeholder="0047 91198022" required><br><br>
 
       <button type="submit">Send</button>
     </form>
+  </div>
+
+</div>
+<!-- SLUTT NEDERSTE SEKSJON -->
+
+       
+
+ 
 
 
-
- </div>
-   
 	
 	<!-- SLUTT HOVEDVINDU -->
 
