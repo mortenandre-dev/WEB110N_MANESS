@@ -1,0 +1,183 @@
+/*Egen Styling for Tjenester siden*/
+/* Tilpasser hoveddelen til toppmenyen*/
+
+.hovedside {  
+  max-width: 1100px;   /* Bredden på hovedsiden */
+  margin-top: 20px;   /* Luft over innholdet */
+  margin-bottom: 80px; /* Luft under innholdet */
+  padding: 20px;       /* Litt innvendig luft også */
+}
+
+html {
+  scroll-behavior: smooth; /* For smooth scrolling ved trykk på Kontakt oss knappen */
+}
+
+/* Styling av Spør oss om hjelp seksjonen */
+.spor-oss {
+  background-color: #f5f5f5; /* hvit bakkgunn */
+  padding: 20px 20px; /* Luft*/
+  border-radius: 12px; /*avrundede hjørner*/
+  margin: 40px auto; /*luft rundt boksen*/
+  max-width: 90%; /* boksens bredde*/
+}
+
+.spor-oss-innhold {
+  display: flex;
+  flex-wrap: wrap;/*Elementets brytes i flere linjer ved behov*/
+  align-items: center;/*sentrer vertikalt*/
+  justify-content: space-between; /*Fordeler horisontalt*/
+}
+
+.spor-oss .tekst {
+  flex: 1 1 450px; /*Fleksibel bredde*/
+  text-align: center; /*Sentreres horisontalt*/
+}
+
+.spor-oss .tekst h1 {
+  font-size: 2rem; /*Større overskrift*/
+  color: #222;
+  margin-bottom: 15px;/*God linjeavstand*/
+}
+
+.spor-oss .tekst p {
+  font-size: 1.1rem;/*Mindre skrift i avsnittet*/
+  line-height: 1.6;
+  color: #333;
+}
+
+.spor-oss .knapp {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.spor-oss .knapp:hover {
+  background-color: #444; /*Ved hover blir bakgrunnsfargen litt lysere*/
+}
+
+.spor-oss .bilde img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px; /*Runde hjørner*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 800px) { /*Ved mindre skjermbilde legges innholdet vertikalt og sentreres*/
+  .spor-oss-innhold {
+    flex-direction: column;
+    text-align: center;
+  }
+  .spor-oss .bilde img {
+    max-width: 90%;
+  }
+
+/* Styling av tjeneste boksene */
+
+}    
+.tjenester-container {
+  display: flex;/*Layout som sentrerer boksene og gir luft mellom*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.tjeneste-boks {
+    
+  background-color: #f5f5f5; /* Lys grå bakgrunn */
+  border-radius: 12px; /*Avrundede hjørner*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 280px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.tjeneste-boks img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.tjeneste-boks:hover {/*Ved hover, boksen løftes litt opp og får sterkere skygge*/
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.tjeneste-boks h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.tjeneste-boks p {
+  color: #333;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .tjenester-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tjeneste-boks {
+    width: 90%;
+  }
+}
+/*Styling av den nederste seksjonen*/
+
+.nederste-seksjon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ 
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Luft under innholdet */
+  margin: 40px auto; /*luft rundt boksen*/
+  max-width: 90%; /* boksens bredde*/
+
+}
+
+.arbeidsprosess,
+.kontaktseksjon {
+  flex: 1;
+  min-width: 0; /* viktig for at flex skal fungere riktig */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.arbeidsprosess {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.kontaktseksjon form input,
+.kontaktseksjon form button {
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 900px) {
+  .nederste-seksjon {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .arbeidsprosess {
+    margin-right: 0;
+  }
+}
+ 
