@@ -127,6 +127,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: rgb(122, 118, 118);
+
 }
 
 .some, p {
@@ -151,7 +153,7 @@ footer > div {
     color: black;
 }
 
-.kontakt-bunnmeny {
+.kontakt {
     color: black;
 
 }
@@ -195,14 +197,6 @@ input[type=submit]:hover {
   padding: 20px;
   display: inline-block;
   width: 500px;
-}
-
-boks {
-  background-color: rgb(118, 121, 123);
-  width: 100px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
 }
 
 
