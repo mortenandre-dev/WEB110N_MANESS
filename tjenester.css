@@ -4,7 +4,7 @@
 .hovedside {  
   max-width: 1100px;   /* Bredden på hovedsiden */
   margin-top: 20px;   /* Luft over innholdet */
-  margin-bottom: 80px; /* Luft under innholdet */
+  margin-bottom: 20px; /* Luft under innholdet */
   padding: 20px;       /* Litt innvendig luft også */
 }
 
@@ -131,13 +131,67 @@ html {
     width: 90%;
   }
 }
+
+
+/* Kontaktseksjonen */
+
+
+.cta { /*Knapp*/
+  background-color: #222;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background-color:  #444; /*Ved hover blir bakgrunnsfargen litt lysere*/
+}
+
+.cta.lys {
+  background-color: white;
+  color: black;
+}
+
+.kontakt {
+  background-color: rgb(54, 99, 132);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 15px;
+}
+
+.kontakt h2 {
+  font-size: 2rem;
+}
+
+.kontakt p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 800px) {
+  .kort-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kort {
+    width: 90%;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /*Styling av den nederste seksjonen*/
 
 .nederste-seksjon {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
- 
   gap: 20px;
   margin-top: 20px;
   margin-bottom: 20px; /* Luft under innholdet */
