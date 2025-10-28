@@ -1,0 +1,161 @@
+/* ------------------------------
+   Forside – kontor.css
+--------------------------------*/
+
+/* Generell stil 
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}*/
+
+.hovedside {  
+  max-width: 1100px;   /* Bredden på hovedsiden */
+  margin-top: 20px;   /* Luft over innholdet */
+  margin-bottom: 20px; /* Luft under innholdet */
+  padding: 20px;       /* Litt innvendig luft også */
+}
+
+/* Styling av produkter seksjonen */
+.produkter {
+  background-color: #f5f5f5; /* hvit bakkgunn */
+  padding: 20px 20px; /* Luft*/
+  border-radius: 12px; /*avrundede hjørner*/
+  margin: 40px auto; /*luft rundt boksen*/
+  max-width: 90%; /* boksens bredde*/
+}
+
+.produkter-innhold {
+  display: flex;
+  flex-wrap: wrap;/*Elementets brytes i flere linjer ved behov*/
+  align-items: center;/*sentrer vertikalt*/
+  justify-content: space-between; /*Fordeler horisontalt*/
+}
+
+.produkter .tekst {
+  flex: 1 1 450px; /*Fleksibel bredde*/
+  text-align: center; /*Sentreres horisontalt*/
+}
+
+.produkter .tekst h1 {
+  font-size: 2rem; /*Større overskrift*/
+  color: #222;
+  margin-bottom: 15px;/*God linjeavstand*/
+}
+.produkter .tekst p {
+  font-size: 1.1rem;/*Mindre skrift i avsnittet*/
+  line-height: 1.6;
+  color: #333;
+}
+
+.produkter .bilde img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px; /*Runde hjørner*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cta { /*Knapp*/
+  background-color: #222;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background-color:  #444; /*Ved hover blir bakgrunnsfargen litt lysere*/
+}
+
+.cta.lys {
+  background-color: white;
+  color: black;
+}
+
+/* Styling av kategorier seksjonen */
+.produkter-container {
+  display: flex;/*Layout som sentrerer boksene og gir luft mellom*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+.produkter-boks {
+    
+  background-color: #f5f5f5; /* Lys grå bakgrunn */
+  border-radius: 12px; /*Avrundede hjørner*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 280px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.produkter-boks img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.produkter-boks:hover {/*Ved hover, boksen løftes litt opp og får sterkere skygge*/
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.produkter-boks h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.produkter-boks p {
+  color: #333;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .produkter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .produkter-boks {
+    width: 90%;
+  }
+}
+
+/* Kontaktseksjonen */
+.kontakt {
+  background-color: rgb(54, 99, 132);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 15px;
+}
+
+.kontakt h2 {
+  font-size: 2rem;
+}
+
+.kontakt p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 800px) {
+  .kort-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kort {
+    width: 90%;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
