@@ -129,6 +129,7 @@ a {
   margin-top: 20px;   /* Luft over innholdet */
   margin-bottom: 20px; /* Luft under innholdet */
   padding: 20px;       /* Litt innvendig luft også */
+  text-align: center;
 }
 .some, p {
 color: red;
@@ -205,6 +206,7 @@ boks {
   padding: 50px;
   margin: 20px;
 }
+
 
 
 
