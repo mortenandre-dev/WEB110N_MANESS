@@ -200,12 +200,13 @@ input[type=submit]:hover {
 }
 
 boks {
-  background-color: lightgrey;
-  width: 300px;
+  background-color: rgb(118, 121, 123);
+  width: 100px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
 }
+
 
 
 
