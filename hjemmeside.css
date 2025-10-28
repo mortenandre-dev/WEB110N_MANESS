@@ -127,6 +127,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: RGB(0, 0, 0, 0,0);
 
 }
 
@@ -197,6 +198,7 @@ input[type=submit]:hover {
   display: inline-block;
   width: 500px;
 }
+
 
 
 
