@@ -91,7 +91,7 @@ a:hover {
 
 /* ======== HOVEDINNHOLD ======== */
 .hovedside {
-    width: 90%;
+    max-width: 1100px;   /* Bredden på hovedsiden */
     margin: 50px auto;
     background: white;
     border-radius: 12px;
